@@ -23,7 +23,7 @@ feature 'sql injection' do
     end
     click_on 'Submit'
 
-    pending if verifying_fixed?
+    skip if verifying_fixed?
     @admin_user = User.where("admin='t'").first
     expect(@admin_user.email).to eq('joe.admin@schmoe.com')
     expect(@admin_user.admin).to eq(true)
