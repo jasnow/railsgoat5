@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 #don't upgrade
 gem 'rails', '5.1.0.rc1'
 
-ruby '2.3.3'
+ruby '2.3.4'
 
 gem 'rake'
 
